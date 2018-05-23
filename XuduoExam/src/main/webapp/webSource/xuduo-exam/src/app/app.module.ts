@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppTestHeroesComponent } from './app-test-component/app-test-heroes/app-test-heroes.component';
 import { AppTestDetailComponent } from './app-test-component/app-test-detail/app-test-detail.component';
 import { HeroService } from './app-test-component/hero.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HeroService } from './app-test-component/hero.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [HeroService],
   bootstrap: [AppComponent]

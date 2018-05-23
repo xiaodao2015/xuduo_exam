@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import  {Hero} from './hero';
 import { HeroService } from '../hero.service';
 @Component({
@@ -17,6 +17,7 @@ export class AppTestHeroesComponent implements OnInit {
 
   ngOnInit() {
    this.heroes = this.heroService.getHeroes();
+  
   }
   
 
